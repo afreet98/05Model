@@ -11,5 +11,9 @@
 			<attribute name="owner.project.facets" value="jst.web"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/jdbc-driver"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/junit-4.13.2"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/mybatis-3.4.6"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/spring-framework-5.2.5.RELEASE"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>
