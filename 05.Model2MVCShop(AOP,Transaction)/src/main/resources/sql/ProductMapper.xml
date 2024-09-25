@@ -56,13 +56,13 @@
 											<if test="searchCondition != null">
 												<where>
 													<if test="searchCondition == 0 and searchKeyword !='' ">
-										 				prod_no = #{searchKeyword}
+										 				prod_no LIKE CONCAT(#{searchKeyword}, '%')
 													</if>
 													<if test="searchCondition == 1 and searchKeyword !='' ">
-										 				prod_name = #{searchKeyword}
+										 				prod_name LIKE CONCAT(#{searchKeyword}, '%')
 													</if>
 													<if test="searchCondition == 2 and searchKeyword !='' ">
-										 				price = #{searchKeyword}
+										 				price LIKE CONCAT(#{searchKeyword}, '%')
 													</if>
 												</where>
 											</if>
@@ -80,13 +80,13 @@
 						<if test="searchCondition != null">
 							<where>
 								<if test="searchCondition == 0 and searchKeyword !='' ">
-									prod_no = #{searchKeyword}
+									prod_no LIKE CONCAT(#{searchKeyword}, '%')
 								</if>
 								<if test="searchCondition == 1 and searchKeyword !='' ">
-									prod_name = #{searchKeyword}
+									prod_name LIKE CONCAT(#{searchKeyword}, '%')
 								</if>
 								<if test="searchCondition == 2 and searchKeyword !='' ">
-									price = #{searchKeyword}
+									price LIKE CONCAT(#{searchKeyword}, '%')
 								</if>
 							</where>
 						</if> ) countTable						
